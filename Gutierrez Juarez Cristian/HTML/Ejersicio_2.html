@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Sueldo</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="10_algoritmos.js"></script>
+    <style>
+        body {
+            background-color: #8daef7; /* Fondo más oscuro */
+            color: #5613d3; /* Texto rojo */
+            font-family: 'Verdana', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header h1 {
+            font-size: 60px;
+            text-align: center;
+            color: #5009d3; /* Amarillo */
+            margin-top: 20px;
+        }
+
+        .mi_div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .campo {
+            background-color: #1f1f1f; /* Fondo más oscuro */
+            color: #ff0000; /* Texto rojo */
+            border: 1px solid #ff0000; /* Borde rojo */
+            width: 180px;
+            height: 25px;
+            margin: 10px 0;
+            padding: 5px;
+        }
+
+        .mi_div button {
+            background-color: #1f1f1f; /* Fondo más oscuro */
+            color: #ff0000; /* Texto rojo */
+            border: 1px solid #ff0000; /* Borde rojo */
+            width: 80px;
+            height: 30px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s, color 0.3s; /* Transición suave */
+        }
+
+        .mi_div button:hover {
+            background-color: #ff0000; /* Fondo rojo al pasar el ratón */
+            color: #1f1f1f; /* Texto oscuro al pasar el ratón */
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Calculadora de Sueldo</h1>
+    </header>
+    <main>
+        <div class="mi_div">
+            <h2 style="color: #3436c0;">Sueldo fijo = $1000</h2>
+            <h2 style="color: #241c92;">Comisión = 10% de tu sueldo</h2>
+            <form action="/" method="post">
+                <label for="dinero" style="color: #ffcc00;">Ventas :</label>
+                <input type="text" name="dinero" id="dinero" title="dinero" placeholder="Ejemplo: 1000" class="campo">
+                <br>
+                <button onclick="tarea2()">Calcular</button>
+            </form>
+        </div>
+    </main>
+
+</body>
+
+</html>
+

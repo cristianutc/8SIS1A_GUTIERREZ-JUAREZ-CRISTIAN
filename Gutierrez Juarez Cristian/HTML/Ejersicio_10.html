@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Utilidades</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #9fe0f0;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: #3498db;
+        }
+
+        label {
+            display: block;
+            font-size: 18px;
+            color: #3498db;
+            margin: 15px 0 5px;
+        }
+
+        input {
+            padding: 10px;
+            margin-bottom: 15px;
+            width: 250px;
+            border: 1px solid #3498db;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #3498db;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #2574a9;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <h1>Calculadora de Utilidades</h1>
+
+    <label for="antiguedad">Antigüedad en años:</label>
+    <input type="text" id="antiguedad" placeholder="Ingrese la antigüedad en años">
+
+    <br>
+
+    <label for="salarioMensual">Salario Mensual:</label>
+    <input type="text" id="salarioMensual" placeholder="Ingrese el salario mensual">
+
+    <br>
+
+    <button onclick="tarea10()">Calcular Utilidad</button>
+
+</body>
+
+</html>

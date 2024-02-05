@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compra</title>
+    <style>
+        body {
+            background-color: #2d3436; /* Fondo más oscuro */
+            color: #fdcb6e; /* Texto amarillo */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 60px;
+            text-align: center;
+            color: #fdcb6e; /* Amarillo */
+            margin-top: 20px;
+        }
+
+        h2 {
+            font-size: 30px;
+            color: #fdcb6e; /* Amarillo */
+        }
+
+        form {
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        select {
+            padding: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #2d3436; /* Fondo más oscuro */
+            border: 2px solid #fdcb6e; /* Borde amarillo */
+            color: #fdcb6e; /* Texto amarillo */
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s; /* Transición suave */
+        }
+
+        button:hover {
+            background-color: #fdcb6e; /* Fondo amarillo al pasar el ratón */
+            color: #2d3436; /* Texto oscuro al pasar el ratón */
+        }
+    </style>
+    <script>
+        function tarea3() {
+            // Agrega tu lógica para calcular el total y generar el ticket aquí
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Carrito de Compra</h1>
+    </header>
+    <main>
+        <h2>Selecciona tus productos</h2>
+        <form action="">
+            <label for="producto1">Producto 1: $100 c/u Cantidad:</label>
+            <select name="producto1" id="producto1">
+                <option value="0">Nada</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <br>
+            <br>
+            <label for="producto2">Producto 2: $200 c/u Cantidad:</label>
+            <select name="producto2" id="producto2">
+                <option value="0">Nada</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+        </form>
+        <p>Total de la compra: (presiona el botón)</p>
+        <br>
+        <button onclick="tarea3()">Generar Ticket</button>
+    </main>
+</body>
+
+</html>

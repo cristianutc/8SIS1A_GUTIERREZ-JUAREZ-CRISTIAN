@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Capital</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="10_algoritmos.js"></script>
+    <style>
+        body {
+            background-color: #5eb0fc; /* Fondo más oscuro */
+            color: #0066ff; /* Texto azul */
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header h1 {
+            font-size: 60px;
+            text-align: center;
+            color: #3909be; /* Amarillo */
+            margin-top: 20px;
+        }
+
+        .mi_div {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .campo {
+            background-color: #1a1a1a; /* Fondo más oscuro */
+            color: #0066ff; /* Texto azul */
+            border: 1px solid #0066ff; /* Borde azul */
+            width: 180px;
+            height: 25px;
+            margin: 10px 0;
+            padding: 5px;
+        }
+
+        .mi_div button {
+            background-color: #1a1a1a; /* Fondo más oscuro */
+            color: #0066ff; /* Texto azul */
+            border: 1px solid #0066ff; /* Borde azul */
+            width: 80px;
+            height: 30px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s, color 0.3s; /* Transición suave */
+        }
+
+        .mi_div button:hover {
+            background-color: #0066ff; /* Fondo azul al pasar el ratón */
+            color: #1a1a1a; /* Texto oscuro al pasar el ratón */
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Calculadora de Capital</h1>
+    </header>
+    <main>
+        <div class="mi_div">
+            <form action="/" method="post">
+                <label for="dinero">Capital :</label>
+                <input type="text" name="dinero" id="dinero" title="dinero" placeholder="Ejemplo: 1000" class="campo">
+                <br>
+                <button onclick="Ejercicio1()">Calcular</button>
+            </form>
+        </div>
+    </main>
+
+</body>
+
+</html>
+
