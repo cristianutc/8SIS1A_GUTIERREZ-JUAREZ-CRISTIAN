@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="validaciones.js"></script>
+</head>
+<style> body {
+    background-color: #e982cf; /* Cambia el color de fondo del cuerpo */
+    color: rgb(255, 255, 255); /* Cambia el color del texto */
+    font-family: 'Arial', sans-serif; /* Cambia la fuente del texto */
+    text-align: center; /* Centra el texto en el cuerpo */
+    margin: 0; /* Elimina el margen por defecto */
+}
+label {
+            color: #070808; /* Cambia el color del texto de las etiquetas */
+        }
+        button {
+            background-color: #1a0577;
+            border-color: #030108;
+            color: #33ccff;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        </style>
+<body>
+    <marquee behavior="scroll" direction="left"><h1> <--wo hai ni--> </h1></marquee>
+    <marquee behavior="scroll" direction="right"><p>Solo<a href="https://www.youtube.com/watch?v=5e2S3xXzSUg"target="_blank">Oprime si eres kawaii</a>.</p></marquee>
+    <marquee behavior="scroll" direction="right"><img src="kawai.gif" alt="kawai"></marquee>
+    <h1>mueve la cabeza si eres kawaii</h1>
+    <audio controls autoplay loop>
+        <source src="bling-bang-bang-born.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+    
+    <br>
+    <br>
+    <!-- Todo primero pide el capital -->
+    <label for="capital">Capital : </label>
+    <input type="text" name="capital" id="capital" placeholder="Eje: 400.23">
+    <span id="mensaje" style="color: red;"></span>
+    <br>
+    <br>
+    <label for="porcentaje">Porcentaje : </label>
+    <select name="porcentaje" id="porcentaje">
+        <option value="80">%80</option>
+    </select>
+    <br>
+    <br>
+    <label for="dias">Días : </label>
+    <select name="dias" id="dias">
+        <option value="30">30</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+    </select>
+    <br>
+    <br>
+    <button id="boton">Calcular</button>
+    <br>
+
+    <!-- Agrega una tabla para mostrar los resultados -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Día</th>
+                <th>Resultado</th>
+            </tr>
+        </thead>
+        <tbody id="tablaResultados"></tbody>
+    </table>
+
+    <br>
+    <span id="Resultados"></span>
+
+    <script>
+        // TODO tu código JavaScript aquí
+    </script>
+</body>
+</html>
